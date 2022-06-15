@@ -6,12 +6,10 @@ import java.util.Objects;
 import java.util.Set;
 
 public class Catalogue {
-    ArrayList<Copy> copies;
-    Set<Title> titles;
+    ArrayList<Copy> copies = new ArrayList<>();
+    Set<Title> titles = new HashSet<>();
 
-    public Catalogue (ArrayList<Copy> copies, Set<Title> titles) {
-        this.copies = copies;
-        this.titles = titles;
+    public Catalogue () {
     }
 
     public void createBook(int isbn, String author, String name, String publisher) {
@@ -41,7 +39,7 @@ public class Catalogue {
         return false;
     }
 
-    public String generateBibTeX(Title title) {
+    public String generateBibTeX(int title) {
         return null;
     }
 
